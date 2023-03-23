@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arroces</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome/css/all.css">
+</head>
+<body>
+    <header>
+        <div class="logoCabecera">
+            <img src="img/logo_WPD_22.png" alt="logoCabecera">
+        </div>
+        <nav class="barraNav">
+            <ul >
+                <a href="index.html#recetas"><li class="elementoBarra">Arroces</li></a>
+                <a href="tienda.html"><li class="elementoBarra">Tienda</li></a>
+                <li class="elementoBarra">Restaurantes</li>
+                <a href="contacto.html"><li class="elementoBarra">Login</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="" action="">
+            <label>
+                <input type="text" placeholder="Nombre" name="nombre" required onkeyup="letras('nombre',0)"> 
+                <span></span>
+            </label>
+            <br>
+            <label>
+                <input type="text" placeholder="Apellidos" name="apellidos" required onkeyup="letras('apellidos',1)">
+                <span></span>
+            </label>
+            <br>
+            <label>
+                <input type="date" required>
+                <span></span>
+            </label>
+            <br>
+            <label>
+                <input type="email" placeholder="ejemplocorreo@gmail.com" required>
+                <span></span>
+            </label>
+            <br>
+            <label>
+                <input type="text" placeholder="nombre-usuario" required>
+                <span></span>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox">Aceptar las condiciones de usuario
+                <span></span>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

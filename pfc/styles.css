@@ -1,0 +1,227 @@
+/*INDEX*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: black;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    /*si no le pongo este flex hace scroll horizontal*/
+    width: 100%;
+
+    margin-bottom: 4%;
+    margin-top: 1%;
+
+}
+
+header {
+    width: 100%;
+    margin: 0px;
+    padding-top: 1.5%;
+    user-select: none;
+}
+
+[class="separador"] {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*nav*/
+.logoCabecera {
+    display: flex;
+    justify-content: center;
+    transition: 2s;
+    width: 90vw;
+    margin-left: 43px;
+}
+
+.logoCabecera:hover {
+    cursor: pointer;
+    transform: rotate(720deg)
+}
+
+.logoCabecera img {
+    width: 15vw;
+
+}
+
+.barraNav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+}
+
+[class="elementoBarra"] {
+    padding: 1%;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+[class="elementoBarra"]:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+/*MAIN*/
+/*RECETAS*/
+.recetas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cardReceta {
+    transition: 0.3s;
+}
+
+.cardReceta:hover {
+    cursor: pointer;
+    transform: translateY(-18px);
+    border-radius: 15px;
+
+    background: #ffffff;
+    box-shadow: 1px 13px 26px #a7a7a7,
+        -13px -13px 26px #ffffff;
+}
+
+.recetas img {
+    width: 300px;
+    border-radius: 5px;
+}
+
+/*RESTAURANTES*/
+[class="restaurantes"] {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 100%;
+}
+
+.cardRestaurante {
+    margin-left: 3%;
+    margin-right: 3%;
+    transition: 0.3s;
+}
+
+.cardRestaurante:hover {
+    cursor: pointer;
+    transform: translateY(-15px);
+}
+
+[class="restaurantes"] img {
+    width: 360px;
+    height: 262px;
+}
+
+/*CURSOS*/
+.cursos {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+/*TIENDA*/
+
+/*aside*/
+.mainAsideTienda {
+    width: 90vw;
+    display: flex;
+}
+
+.asideTienda {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 100px;
+    margin: 0px;
+    padding: 0%;
+    list-style: none;
+    width: 10vw;
+    height: 100%;
+    /* background-color: #D97904; */
+}
+
+.asideTienda li {
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.asideTienda li:hover {
+    cursor: pointer;
+    transform: translateX(15px);
+    font-size: 30px;
+}
+
+/*MAIN*/
+
+.cardsProducto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 5%;
+
+}
+
+.cardsProducto .card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 18vw;
+    height: 55vh;
+    transition: 1s;
+    word-wrap: break-word;
+    padding: 1%;
+}
+
+.cardsProducto .card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card p {
+    margin: 0px;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*CONTACTO*/
+label {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

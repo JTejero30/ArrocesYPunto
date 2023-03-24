@@ -4,14 +4,18 @@
 * {
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: black;
-
+   
+    scroll-behavior: smooth;
 }
 
 body {
     width: 100%;
     height: 100%;
     margin: 0px;
+    
+    background-color: whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 main {
@@ -22,6 +26,7 @@ main {
 }
 
 nav {
+    color: rgb(229, 229, 229);
     display: flex;
     /*si no le pongo este flex hace scroll horizontal*/
     width: 100%;
@@ -29,14 +34,64 @@ nav {
     margin-bottom: 4%;
     margin-top: 1%;
 
+    z-index: 1;
+    position: absolute;
+
+}
+a:visited{
+    color: rgb(229, 229, 229);
 }
 
 header {
     width: 100%;
+    
     margin: 0px;
-    padding-top: 1.5%;
     user-select: none;
 }
+
+.imagenHeader{
+    background-repeat: no-repeat;
+    width: 100%;
+    
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    
+
+    filter:brightness(60%)
+}
+
+.logoHeader{
+    width: 70%;
+
+    position: absolute;
+    z-index: 2;
+
+    top: 25%;
+    left: 14%;
+
+    filter:brightness(95%)
+}
+.flecha{
+    position: absolute;
+    top: 80%;
+    left: 45%;
+
+    width: 8%;
+
+    filter:brightness(95%);
+    transition: 0.7s;
+
+}
+.circuloFlecha{
+    border: 1px rgb(229, 229, 229) solid;
+    border-radius: 100%;
+}
+.flecha:hover{
+    cursor: pointer;
+    transform: translateY(18px);
+}
+
 
 [class="separador"] {
     width: 90%;
@@ -72,7 +127,7 @@ header {
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 [class="elementoBarra"] {
@@ -91,12 +146,14 @@ header {
 .recetas {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    
     margin-bottom: 20px;
 }
 
 .cardReceta {
+    margin-top: 8%;
     transition: 0.3s;
+    text-align: center;
 }
 
 .cardReceta:hover {
@@ -104,9 +161,8 @@ header {
     transform: translateY(-18px);
     border-radius: 15px;
 
-    background: #ffffff;
-    box-shadow: 1px 13px 26px #a7a7a7,
-        -13px -13px 26px #ffffff;
+    background: #ffffff00;
+    box-shadow: 1px 13px 26px #a7a7a7;
 }
 
 .recetas img {
@@ -215,6 +271,24 @@ header {
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*CONTACTO*/
+
+.inputLog{
+
+    height: 30px;
+    width: 350px;
+
+}
+.label{
+    display: flex;
+    gap: 10px;
+}
+span{
+    font-size: 30px;
+
+    margin-left: 10%;
+
+
+}
 label {
     display: flex;
     justify-content: center;
@@ -224,4 +298,9 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.condiciones{
+    
+    margin-left: -10%;
 }

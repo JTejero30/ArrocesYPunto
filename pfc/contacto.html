@@ -24,34 +24,33 @@
     </header>
     <main>
         <form method="" action="">
-            <label>
-                <input type="text" placeholder="Nombre" name="nombre" required onkeyup="letras('nombre',0)"> 
+            <label class="label">
+                <input class="inputLog" type="text" placeholder="Nombre" name="nombre" required onkeyup="letras('nombre',0)"> 
+                <span></span>
+            </label>
+            <br>
+            <label class="label">
+                <input class="inputLog" type="text" placeholder="Apellidos" name="apellidos" required onkeyup="letras('apellidos',1)">
+                <span></span>
+            </label>
+            <br>
+            <label class="label">
+                <input class="inputLog" type="date" required>
+                <span></span>
+            </label>
+            <br>
+            <label class="label">
+                <input class="inputLog" type="email" placeholder="ejemplocorreo@gmail.com" required>
+                <span></span>
+            </label>
+            <br>
+            <label class="label">
+                <input class="inputLog" type="text" placeholder="nombre-usuario" required>
                 <span></span>
             </label>
             <br>
             <label>
-                <input type="text" placeholder="Apellidos" name="apellidos" required onkeyup="letras('apellidos',1)">
-                <span></span>
-            </label>
-            <br>
-            <label>
-                <input type="date" required>
-                <span></span>
-            </label>
-            <br>
-            <label>
-                <input type="email" placeholder="ejemplocorreo@gmail.com" required>
-                <span></span>
-            </label>
-            <br>
-            <label>
-                <input type="text" placeholder="nombre-usuario" required>
-                <span></span>
-            </label>
-            <br>
-            <label>
-                <input type="checkbox">Aceptar las condiciones de usuario
-                <span></span>
+                <input class="condiciones" type="checkbox" >Aceptar las condiciones de usuario
             </label>
             <button type="submit">Enviar</button>
         </form>

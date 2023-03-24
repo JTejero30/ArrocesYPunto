@@ -12,10 +12,12 @@ iconoX.setAttribute('style', 'color: #f51414;')
 
 
 //NOMBRE y APELLIDO SIN NUMEROS 
-console.log(formulario[0]['nombre']['value']);
 
+/*
+Funcion que recibe por parametro el name del input y el numero del span a modificar
+*/
 
-function letras( name , num) {
+function letras( name , num) { 
     
     let valor= formulario[0][name]['value'] // quiero hacerlo expansible a apellido sin dar ['nombre'] ni posicion span
     let validacion= /^[A-Za-z]*$/ //falta validar espacios

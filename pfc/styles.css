@@ -7,6 +7,9 @@
    
     scroll-behavior: smooth;
 }
+header {
+    width: 100%;
+}
 
 body {
     width: 100%;
@@ -25,6 +28,9 @@ main {
     width: 100%;
 }
 
+
+
+/*nav*/
 nav {
     color: rgb(229, 229, 229);
     display: flex;
@@ -46,13 +52,7 @@ a:link{
     color:  rgb(229, 229, 229);
 }
 
-header {
-    width: 100%;
-    
-    margin: 0px;
-    user-select: none;
 
-}
 .abrir{
     z-index: 1;
     position: absolute;
@@ -89,6 +89,10 @@ header {
 
     filter:brightness(95%)
 }
+.logoHeaderMobile{
+    position: absolute;
+    visibility: hidden;
+}
 .flecha{
     position: absolute;
     top: 80%;
@@ -110,28 +114,9 @@ header {
     margin: 0 auto;
 }
 
-/*nav*/
-.logoCabecera {
-    display: flex;
-    justify-content: center;
-    transition: 2s;
-    width: 90vw;
-    margin-left: 43px;
-}
-
-.logoCabecera:hover {
-    cursor: pointer;
-    transform: rotate(720deg)
-}
-
-.logoCabecera img {
-    width: 15vw;
-
-}
-
 .barraNav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 100vw;
     height: 10vh;
@@ -225,7 +210,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     gap: 100px;
-    margin: 0px;
+    margin-top: 5rem;
     padding: 0%;
     list-style: none;
     width: 10vw;
@@ -251,6 +236,10 @@ header {
 
 /*MAIN*/
 
+.mainTienda{
+    margin-top: 3rem;
+}
+
 .cardsProducto {
     display: flex;
     flex-wrap: wrap;
@@ -264,8 +253,8 @@ header {
     flex-direction: column;
     border: solid 1px black;
     border-radius: 10px;
-    width: 18vw;
-    height: 55vh;
+    width: 250px;
+    height: auto;
     transition: 1s;
     word-wrap: break-word;
     padding: 1%;
@@ -282,6 +271,16 @@ header {
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*CONTACTO*/
+
+form{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    gap:1rem;
+}
 
 .inputLog{
 
@@ -306,9 +305,7 @@ label {
 }
 
 button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .condiciones{

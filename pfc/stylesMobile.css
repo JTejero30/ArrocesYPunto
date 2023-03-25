@@ -1,5 +1,6 @@
 @media screen and  (max-width: 650px){
     .logoHeaderMobile{
+        visibility:visible;
         width: 35%;
         top: 3%;
         left: 2%;
@@ -9,7 +10,7 @@
         
         position: absolute;
         top: 0px;
-        background-color: rgba(0, 0, 0, 0.402);
+        background-color: rgba(9, 9, 9, 0.443);
 
         bottom: 0;
         padding-top: 15%;
@@ -20,7 +21,7 @@
         bottom: 0px; /*para que llegue hasta abajo*/
     }
     .barraNav ul{
-        margin-top: 30%;
+        margin-top: 80px;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
@@ -61,5 +62,19 @@
     }
     .barraNav.visible{
         visibility: visible;
+    }
+
+
+    /******************TIENDA***********************/
+    .mainTienda{
+        margin-top: 30%;
+    }
+
+    .asideTienda{
+        flex-direction: row;
+        margin-left: 50%;
+    }
+    .asideTienda li{
+        margin-top: 0%;
     }
 }

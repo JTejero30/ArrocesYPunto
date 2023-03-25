@@ -34,17 +34,19 @@ function letras( name , num) {
 }
 
 /***************HAMBURGUESA*********************/
-let barraNav, logo, abrir
+let barraNav, logo, abrir, header
 
 barraNav = document.getElementsByClassName('barraNav')[0];
 logo= document.getElementsByClassName('logoHeader')[0];
 abrir=document.getElementsByClassName('abrir')[0];
+header=document.getElementsByClassName('header')[0];
 
 function abrirHamburguesa() {
 
     barraNav.classList.add('visible');
     logo.classList.add('logoHeaderMobile');
     abrir.classList.add('esconder')
+    header.classList.add('abierto');
 }
 
 function cerrarHamburguesa() {

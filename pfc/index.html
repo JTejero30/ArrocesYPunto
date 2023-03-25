@@ -1,104 +1,127 @@
 <!--Grupo 3-->
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="MiguelJavier">
-        <meta name="keywords" content="">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="fontawesome/fontawesome/css/all.css">
-        <link rel="icon" type="image/x-icon" href="img/logo_WPD_22.ico">
-        <title>Arroces</title>
-    </head>
-    <body>
-        <header>
-            <!-- <div class="logoCabecera">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="MiguelJavier">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesMobile.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="img/logo_WPD_22.ico">
+    <title>Arroces</title>
+</head>
+
+<body>
+    <header>
+        <!-- <div class="logoCabecera">
                 <img src="img/logo_WPD_22.png" alt="logoCabecera">
             </div> -->
-            <nav class="barraNav">
-                <ul >
-                    <a href="#recetas"><li class="elementoBarra">Arroces</li></a>
-                    <a href="tienda.html"><li class="elementoBarra">Tienda</li></a>
-                    <li class="elementoBarra">Restaurantes</li>
-                    <a href="contacto.html"><li class="elementoBarra">Login</li></a>
-                </ul>
-            </nav>
-            <div>
-                <img class="imagenHeader" src="img/sandy-ravaloniaina-rARwqh9IXEE-unsplash.jpg" alt="">
+        <button class="abrir" onclick="abrirHamburguesa()"><i class="bi bi-list"></i></i></button>
+        <nav class="barraNav">
+            <ul class="abierto">
+                <button class="cerrar" onclick="cerrarHamburguesa()"><i class="bi bi-x-lg"></i></button>
+                <a href="#recetas">
+                    <li class="elementoBarra">Arroces</li>
+                </a>
+                <a href="tienda.html">
+                    <li class="elementoBarra">Tienda</li>
+                </a>
+                <li class="elementoBarra">Restaurantes</li>
+                <a href="contacto.html">
+                    <li class="elementoBarra">Login</li>
+                </a>
+            </ul>
+        </nav>
+        <div>
+            <img class="imagenHeader" src="img/sandy-ravaloniaina-rARwqh9IXEE-unsplash.jpg" alt="">
+        </div>
+        <div>
+            <img class="logoHeader" src="img/arroces-y-punto-blanco.png" alt="">
+        </div>
+        <div>
+            <a href="#recetas"><img class="flecha"
+                    src="img/png-transparent-arrow-computer-icons-logo-white-down-arrow-miscellaneous-angle-rectangle.png"
+                    alt=""></a>
+        </div>
+    </header>
+    <main>
+        <section id="recetas" class="recetas">
+            <div class="cardReceta">
+                <img src="img/Arroz_01.jpg" alt="">
+                <h2><em>Arroz de Salmonete</em></h2>
+                <p></p>
             </div>
-            <div>
-                <img class="logoHeader" src="img/arroces-y-punto-blanco.png" alt="">
+            <div class="cardReceta">
+                <img src="img/Arroz de costilla y mejillon_01.jpg" alt="">
+                <h2><em>Arroz de costilla en llanda</em></h2>
+                <p></p>
             </div>
-            <div >
-                <a href="#recetas"><img class="flecha" src="img/png-transparent-arrow-computer-icons-logo-white-down-arrow-miscellaneous-angle-rectangle.png" alt=""></a>
+            <div class="cardReceta">
+                <img src="img/Arroz negro_01.jpg" alt="">
+                <h2><em>Arroz negro de carabinero</em></h2>
+                <p></p>
             </div>
-        </header>
-        <main>
-            <section id="recetas" class="recetas">
-                <div class="cardReceta">
-                    <img src="img/Arroz_01.jpg" alt="">
-                    <h2><em>Arroz de Salmonete</em></h2>
-                    <p></p>
-                </div>
-                <div class="cardReceta">
-                    <img src="img/Arroz de costilla y mejillon_01.jpg" alt="">
-                    <h2><em>Arroz de costilla en llanda</em></h2>
-                    <p></p>
-                </div>
-                <div class="cardReceta">
-                    <img src="img/Arroz negro_01.jpg" alt="">
-                    <h2><em>Arroz negro de carabinero</em></h2>
-                    <p></p>
-                </div>
-            </section>
-            <div class="separador">
-                <hr>
-            </div>
-            <section class="cursos">
-                <div class="cursosdetalle"><!---->
-                    <h2>ARROCES</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorem beatae, corporis doloribus ducimus debitis sapiente pariatur odit perferendis quam, tempora assumenda animi at culpa eos aut repellendus cumque recusandae?</p>
-                </div>
-                <div class="cursosdetalle">
-                    <h2>CALDOS</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, ipsum quam iste amet debitis quasi numquam dolores soluta ut officiis vel dolorum fuga perferendis ad, quis, labore expedita quia aspernatur.</p>
-                </div>
-                <div class="cursosdetalle">
-                    <h2>ARROZ HOSTELERIA</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, illum tempore molestias quos illo pariatur beatae. A aut, eos autem quas reiciendis similique eius quae animi deserunt placeat. Nemo, id.</p>
-                </div>
-            </section>
-            <section class="restaurantes"><!--nos gustaria poner los restaurantes ordenados por cercania al usuario-->
-                <div class="cardRestaurante">
-                    <img src="img/arroces-al-sarmiento.jpg" alt="">
-                    <h2><em>Los Arroces de Segis</em></h2>
-                    <p>3/5</p>
-                    <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                </div>
-                <div class="cardRestaurante">
-                    <img src="img/lacabra.jpg" alt="">
-                    <h2><em>Restaurante La Cabra</em></h2>
-                    <p>5/5</p>
-                    <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                </div>
-                <div class="cardRestaurante">
-                    <img src="img/TR5DYQ4TMNB3JB5FVMSJUXFGKA.jpg" alt="">
-                    <h2><em>Volea</em></h2>
-                    <p>4/5</p>
-                    <i class="far fa-star" ></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                </div>
-            </section>
-        </main>
+        </section>
         <div class="separador">
             <hr>
         </div>
-        <footer>
-            <!--Aqui irán iconos flotantes con redes sociales-->
-            <address>Calle Bernardino Obregón 19 <br>
+        <section class="cursos">
+            <div class="cursosdetalle"><!---->
+                <h2>ARROCES</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorem beatae, corporis doloribus
+                    ducimus debitis sapiente pariatur odit perferendis quam, tempora assumenda animi at culpa eos aut
+                    repellendus cumque recusandae?</p>
+            </div>
+            <div class="cursosdetalle">
+                <h2>CALDOS</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, ipsum quam iste amet debitis quasi
+                    numquam dolores soluta ut officiis vel dolorum fuga perferendis ad, quis, labore expedita quia
+                    aspernatur.</p>
+            </div>
+            <div class="cursosdetalle">
+                <h2>ARROZ HOSTELERIA</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, illum tempore molestias quos illo
+                    pariatur beatae. A aut, eos autem quas reiciendis similique eius quae animi deserunt placeat. Nemo,
+                    id.</p>
+            </div>
+        </section>
+        <section class="restaurantes"><!--nos gustaria poner los restaurantes ordenados por cercania al usuario-->
+            <div class="cardRestaurante">
+                <img src="img/arroces-al-sarmiento.jpg" alt="">
+                <h2><em>Los Arroces de Segis</em></h2>
+                <p>3/5</p>
+                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            </div>
+            <div class="cardRestaurante">
+                <img src="img/lacabra.jpg" alt="">
+                <h2><em>Restaurante La Cabra</em></h2>
+                <p>5/5</p>
+                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                    class="far fa-star"></i><i class="far fa-star"></i>
+            </div>
+            <div class="cardRestaurante">
+                <img src="img/TR5DYQ4TMNB3JB5FVMSJUXFGKA.jpg" alt="">
+                <h2><em>Volea</em></h2>
+                <p>4/5</p>
+                <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                    class="far fa-star"></i>
+            </div>
+        </section>
+    </main>
+    <div class="separador">
+        <hr>
+    </div>
+    <footer>
+        <!--Aqui irán iconos flotantes con redes sociales-->
+        <address>Calle Bernardino Obregón 19 <br>
             91 765 87 34</address>
-        </footer>
-        <script src="app.js"></script>
-    </body>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
 </html>

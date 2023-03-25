@@ -37,9 +37,13 @@ nav {
     z-index: 1;
     position: absolute;
 
+
 }
 a:visited{
     color: rgb(229, 229, 229);
+}
+a:link{
+    color:  rgb(229, 229, 229);
 }
 
 header {
@@ -47,6 +51,19 @@ header {
     
     margin: 0px;
     user-select: none;
+
+}
+.abrir{
+    z-index: 1;
+    position: absolute;
+
+    display: none;
+}
+.cerrar{
+    z-index: 1;
+    position: absolute;
+
+    display: none;
 }
 
 .imagenHeader{
@@ -62,36 +79,31 @@ header {
 }
 
 .logoHeader{
-    width: 70%;
+    width: 50%;
 
     position: absolute;
     z-index: 2;
 
-    top: 25%;
-    left: 14%;
+    top: 35%;
+    left: 24%;
 
     filter:brightness(95%)
 }
 .flecha{
     position: absolute;
     top: 80%;
-    left: 45%;
+    left: 47%;
 
-    width: 8%;
+    width: 4%;
 
     filter:brightness(95%);
     transition: 0.7s;
 
 }
-.circuloFlecha{
-    border: 1px rgb(229, 229, 229) solid;
-    border-radius: 100%;
-}
 .flecha:hover{
     cursor: pointer;
     transform: translateY(18px);
 }
-
 
 [class="separador"] {
     width: 90%;
@@ -127,11 +139,10 @@ header {
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-size: 30px;
+    font-size: 200%;
 }
 
 [class="elementoBarra"] {
-    padding: 1%;
     border-radius: 3px;
     transition: 0.5s;
 }

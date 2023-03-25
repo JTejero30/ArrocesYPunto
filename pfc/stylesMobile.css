@@ -1,0 +1,65 @@
+@media screen and  (max-width: 650px){
+    .logoHeaderMobile{
+        width: 35%;
+        top: 3%;
+        left: 2%;
+    }
+    .barraNav{
+        visibility: hidden;
+        
+        position: absolute;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.402);
+
+        bottom: 0;
+        padding-top: 15%;
+        padding-bottom: 5%;
+        margin-top: 0;
+        
+
+        bottom: 0px; /*para que llegue hasta abajo*/
+    }
+    .barraNav ul{
+        margin-top: 30%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+    }
+    .barraNav li{
+        transition: 0s;
+        font-size: 90%;
+        padding: 5%; /*hay un padding a investigar en RESTAURANTEs*/
+    }
+    .flecha{
+        display: none;
+    }
+    /*******************/
+    .cerrar, 
+    .abrir{
+        display: block;
+        position: absolute;
+
+        background-color: transparent;
+        color: rgb(229, 229, 229);
+
+        border: none;
+        cursor: pointer;
+    }
+    .abrir{
+        font-size: 270%;
+        top: 2%;
+        left: 86%;
+    }
+    .cerrar{
+        font-size: 150%;
+        top: 2%;
+        left: 86%;
+    }
+    .abrir.esconder{
+        visibility: hidden;
+    }
+    .barraNav.visible{
+        visibility: visible;
+    }
+}

@@ -5,12 +5,15 @@
         top: 3%;
         left: 2%;
     }
+    .opacidad{ /*aplicada al fondo cuando se abre*/
+        filter:brightness(60%);
+    }
     .barraNav{
         visibility: hidden;
         
         position: absolute;
         top: 0px;
-        background-color: rgba(9, 9, 9, 0.443);
+
 
         bottom: 0;
         padding-top: 15%;
@@ -30,7 +33,7 @@
     .barraNav li{
         transition: 0s;
         font-size: 90%;
-        padding: 5%; /*hay un padding a investigar en RESTAURANTEs*/
+        padding: 5%;/*hay un padding a investigar en RESTAURANTEs*/
     }
     .flecha{
         display: none;

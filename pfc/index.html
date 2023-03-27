@@ -16,7 +16,7 @@
     <title>Arroces</title>
 </head>
 
-<body>
+<body onscroll="colorNav()">
     <header>
         <!-- <div class="logoCabecera">
                 <img src="img/logo_WPD_22.png" alt="logoCabecera">
@@ -31,13 +31,15 @@
                 <a href="tienda.html">
                     <li class="elementoBarra">Tienda</li>
                 </a>
-                <li class="elementoBarra">Restaurantes</li>
+                <a href="#restaurantes">
+                    <li class="elementoBarra">Restaurantes</li>
+                </a>
                 <a href="contacto.html">
                     <li class="elementoBarra">Login</li>
                 </a>
             </ul>
         </nav>
-        <div>
+        <div class="imHeader">
             <img class="imagenHeader" src="img/sandy-ravaloniaina-rARwqh9IXEE-unsplash.jpg" alt="">
         </div>
         <div>
@@ -50,8 +52,18 @@
         </div>
     </header>
     <main>
+        <!-- <section class="historia">
+            <p class="c1">Hola</p>
+            <div class="c2"></div>
+            <img class="cachitos" src="img/cachitosfuego.jpg" alt="">
+            <p class="c3">Adios</p>
+            <div class="c4"></div>
+            <p class="c5">Talue</p>
+            <div class="c6"></div>
+        </section> -->
         <section id="recetas" class="recetas">
             <div class="cardReceta">
+                <section class=""></section>
                 <img src="img/Arroz_01.jpg" alt="">
                 <h2><em>Arroz de Salmonete</em></h2>
                 <p></p>
@@ -90,7 +102,8 @@
                     id.</p>
             </div>
         </section>
-        <section class="restaurantes"><!--nos gustaria poner los restaurantes ordenados por cercania al usuario-->
+        <section class="restaurantes" id="restaurantes">
+            <!--nos gustaria poner los restaurantes ordenados por cercania al usuario-->
             <div class="cardRestaurante">
                 <img src="img/arroces-al-sarmiento.jpg" alt="">
                 <h2><em>Los Arroces de Segis</em></h2>

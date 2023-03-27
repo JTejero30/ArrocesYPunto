@@ -34,19 +34,22 @@ function letras( name , num) {
 }
 
 /***************HAMBURGUESA*********************/
-let barraNav, logo, abrir, header
+let barraNav, logo, abrir, header, imheader, body
 
 barraNav = document.getElementsByClassName('barraNav')[0];
 logo= document.getElementsByClassName('logoHeader')[0];
 abrir=document.getElementsByClassName('abrir')[0];
-header=document.getElementsByClassName('header')[0];
+imheader=document.getElementsByClassName('imHeader')[0];
+body= document.getElementsByTagName('body')[0];
+
 
 function abrirHamburguesa() {
 
     barraNav.classList.add('visible');
     logo.classList.add('logoHeaderMobile');
-    abrir.classList.add('esconder')
-    header.classList.add('abierto');
+    abrir.classList.add('esconder');
+    imheader.classList.add('opacidad');
+
 }
 
 function cerrarHamburguesa() {
@@ -54,5 +57,19 @@ function cerrarHamburguesa() {
     barraNav.classList.remove('visible');
     logo.classList.remove('logoHeaderMobile');
     abrir.classList.remove('esconder');
+    imheader.classList.remove('opacidad');
+}
+
+/**********Funcion que detecta la posicion del scroll y cambia el background del nav******/
+
+function colorNav() {
+
+    let ejeY= window.scrollY;
+    console.log(ejeY);
+    if (ejeY>610) {
+        barraNav.classList.add('sticky');
+    }else{
+        barraNav.classList.remove('sticky');
+    }
 }
 

@@ -1,4 +1,19 @@
 /*VALIDACIONES EN EL LOGIN*/
+
+
+/*correo:
+1ª: no puede haber @ ni espacios
+@
+2ª: no espacios 
+.
+3ª: no numeros 
+
+passwd
++una mayuscula
++una minuscula
++dos digitos seguidos
++un signo de los siguientes [-_.+@]
+*/
 let nombre
 let formulario=document.forms
 let span= document.getElementsByTagName('span')
@@ -31,6 +46,12 @@ function letras( name , num) {
         span[num].removeChild(icono)
         span[num].appendChild(iconoX)
     }
+}
+
+function password() {
+    
+    let valor= formulario[0]['password']['value']
+    console.log(valor);
 }
 
 /***************HAMBURGUESA*********************/

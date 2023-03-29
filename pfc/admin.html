@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <button class="abrir" onclick="abrirHamburguesa()"><i class="bi bi-list"></i></i></button>
+        <nav class="barraNav">
+            <ul class="abierto">
+                <button class="cerrar" onclick="cerrarHamburguesa()"><i class="bi bi-x-lg"></i></button>
+                <a href="index.html">
+                    <li class="elementoBarra">Inicio</li>
+                </a>
+                <a href="tienda.html">
+                    <li class="elementoBarra">Tienda</li>
+                </a>
+                <a href="#restaurantes">
+                    <li class="elementoBarra">Restaurantes</li>
+                </a>
+                <a href="contacto.html">
+                    <li class="elementoBarra">Login</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-th="ID">1</td>
+                    <td data-th="Nombre">Paella 24cm</td>
+                    <td data-th="Descripcion">La Paella valenciana de 24 cm es la ideal para 2 personas.</td>
+                    <td data-th="Precio">50€</td>
+                </tr>
+                <tr>
+                    <td data-th="ID">2</td>
+                    <td data-th="Nombre">Paella 28cm</td>
+                    <td data-th="Descripcion">La Paella valenciana de 28 cm es ideal para 3 raciones.</td>
+                    <td data-th="Precio">80€</td>
+                </tr>
+                <tr>
+                    <td data-th="ID">3</td>
+                    <td data-th="Nombre">Paella 30cm</td>
+                    <td data-th="Descripcion">La Paella valenciana de 30 cm es ideal para 4 raciones.</td>
+                    <td data-th="Precio">100€</td>
+                </tr>
+                <tr>
+                    <td data-th="ID"><button>Crear</button></td>
+                    <td data-th="Nombre"><button>Editar</button></td>
+                    <td data-th="Descripcion"><button>Borrar</button></td>
+                    <td data-th="Precio"><button>Mostrar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

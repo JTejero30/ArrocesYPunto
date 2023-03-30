@@ -1,19 +1,7 @@
 /*VALIDACIONES EN EL LOGIN*/
 
 
-/*correo:
-1ª: no puede haber @ ni espacios
-@
-2ª: no espacios 
-.
-3ª: no numeros 
 
-passwd
-+una mayuscula
-+una minuscula
-+dos digitos seguidos
-+un signo de los siguientes [-_.+@]
-*/
 let nombre
 let formulario = document.forms
 let span = document.getElementsByTagName('span')
@@ -26,35 +14,30 @@ iconoX.setAttribute('class', 'fas fa-times')
 iconoX.setAttribute('style', 'color: #f51414;')
 
 
-//NOMBRE y APELLIDO SIN NUMEROS 
+/*correo:
+1ª: no puede haber @ ni espacios
+@
+2ª: no espacios 
+.
+3ª: no numeros 
 
+passwd
++una mayuscula
++una minuscula
++dos digitos seguidos
++un signo de los siguientes [-_.+@]
+
+passwd repeticion que coincida con el anterior password
+nombre y apellidos sin numeros ni caracteres especiales
+*/
 /*
-Funcion que recibe por parametro el name del input y el numero del span a modificar
+Funcion que recibe por parametro el name del input y el numero del span a modificar y la validacion Regex
 */
 
-function correo(name) {
 
-    let valor = formulario[0][name]['value'] // quiero hacerlo expansible a apellido sin dar ['nombre'] ni posicion span
-    // let validacion= /^[a-zA-Z0-9-_.%+]+[@][a-zA-Z0-9]+\.[a-zA-Z]{2,}*$/ //falta validar espacios
-    let validacion = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,}$/;
+function validar(name, num, validacion) {
 
-    if (validacion.test(valor)) {
-        console.log('Bien');
-        span[3].appendChild(icono)
-        span[3].removeChild(iconoX)
-    } else {
-        console.log('Bad');
-        span[3].removeChild(icono)
-        span[3].appendChild(iconoX)
-    }
-
-}
-
-function letras(name, num) {
-
-    let valor = formulario[0][name]['value'] // quiero hacerlo expansible a apellido sin dar ['nombre'] ni posicion span
-    let validacion = /^[A-Za-z]*$/ //falta validar espacios
-
+    let valor = formulario[0][name]['value'] 
     if (validacion.test(valor)) {
         console.log('Bien');
 
@@ -63,30 +46,32 @@ function letras(name, num) {
             span[num].removeChild(iconoX)
         }
     } else {
-        console.log('Bad');
         span[num].appendChild(iconoX)
         if (span[num].hasChildNodes) {
             span[num].removeChild(icono)
         }
     }
 }
+function contraseñaCoincide() {
 
-function tupac(name) {
+    let passw1=formulario[0]['passw1']['value']
+    let passw2=formulario[0]['passw2']['value']
 
-    let valor = formulario[0][name]['value'] // quiero hacerlo expansible a apellido sin dar ['nombre'] ni posicion span
-    // let validacion= /^[A-Za-z]*$/
-    let validacion = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[-.@?!%])(?=.*[0-9])$/ //falta validar espacios
-
-    if (validacion.test(valor)) {
-        console.log('Bien');
-        span[4].appendChild(icono)
-        span[4].removeChild(iconoX)
+    console.log(passw1);
+    console.log(passw2);
+    if (passw1===passw2) {
+        span[5].appendChild(icono)
+        if (span[5].hasChildNodes) {
+            span[5].removeChild(iconoX)
+        }
     } else {
-        console.log('Bad');
-        span[4].removeChild(icono)
-        span[4].appendChild(iconoX)
+        span[5].appendChild(iconoX)
+        if (span[5].hasChildNodes) {
+            span[5].removeChild(icono)
+        }
     }
 }
+
 
 /***************HAMBURGUESA*********************/
 let barraNav, logo, abrir, header, imheader, body

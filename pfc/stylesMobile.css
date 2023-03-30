@@ -35,6 +35,10 @@
         font-size: 90%;
         padding: 5%;/*hay un padding a investigar en RESTAURANTEs*/
     }
+    .login .elementoBarra{
+        height: fit-content;
+        width: fit-content;
+    }
     .flecha{
         display: none;
     }
@@ -80,4 +84,8 @@
     .asideTienda li{
         margin-top: 0%;
     }
+
+    /*******************LOGIN/SIGNUP********************/
+
+    
 }

@@ -32,6 +32,24 @@ iconoX.setAttribute('style', 'color: #f51414;')
 Funcion que recibe por parametro el name del input y el numero del span a modificar
 */
 
+function email(name) {
+    
+    let valor= formulario[0][name]['value'] // quiero hacerlo expansible a apellido sin dar ['nombre'] ni posicion span
+    // let validacion= /^[a-z0-9]+[-_.%+]+@[a-z]+\.[a-z]{2,3}*$/ //falta validar espacios
+    let validacion= /^[A-Za-z]*$/
+
+    if (validacion.test(valor)) {
+        console.log('Bien');
+        span[3].appendChild(icono)
+        span[3].removeChild(iconoX)
+    }else{
+        console.log('Bad');
+        span[3].removeChild(icono)
+        span[3].appendChild(iconoX)
+    }
+    
+}
+
 function letras( name , num) { 
     
     let valor= formulario[0][name]['value'] // quiero hacerlo expansible a apellido sin dar ['nombre'] ni posicion span
@@ -48,9 +66,9 @@ function letras( name , num) {
     }
 }
 
-function password() {
+function password(name) {
     
-    let valor= formulario[0]['password']['value']
+    let valor= formulario[0][name]['value']
     console.log(valor);
 }
 
@@ -82,13 +100,17 @@ function cerrarHamburguesa() {
 }
 
 /**********Funcion que detecta la posicion del scroll y cambia el background del nav******/
+let barrasiete
+barrasiete=document.getElementsByClassName('barrasiete')[0];
 
-function colorNav() {
+function sticky() {
 
     let ejeY= window.scrollY;
-    console.log(ejeY);
+    
     if (ejeY>610) {
         barraNav.classList.add('sticky');
+        barraNav.classList.add('a:visited');
+
     }else{
         barraNav.classList.remove('sticky');
     }

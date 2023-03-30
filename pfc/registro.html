@@ -1,51 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arroces</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="stylesMobile.css">
     <link rel="stylesheet" href="fontawesome/fontawesome/css/all.css">
 </head>
-<body>
+
+<body class="bodyContacto">
     <header>
         <button class="abrir" onclick="abrirHamburguesa()"><i class="bi bi-list"></i></i></button>
         <nav class="barraNav">
             <ul class="abierto">
                 <button class="cerrar" onclick="cerrarHamburguesa()"><i class="bi bi-x-lg"></i></button>
-                <a href="index.html">
-                    <li class="elementoBarra">Inicio</li>
-                </a>
-                <a href="tienda.html">
-                    <li class="elementoBarra">Tienda</li>
-                </a>
-                <a href="#restaurantes">
-                    <li class="elementoBarra">Restaurantes</li>
-                </a>
-                <a href="contacto.html">
+                <div>
+                    <a href="index.html">
+                        <li class="elementoBarra">Inicio</li>
+                    </a>
+                </div>
+                <div>
+                    <a href="tienda.html">
+                        <li class="elementoBarra">Tienda</li>
+                    </a>
+                </div>
+                <div>
+                    <a href="#restaurantes">
+                        <li class="elementoBarra">Restaurantes</li>
+                    </a>
+                </div>
+                <div class="login">
+                    <li>
+                        <a href="contacto.html">
                     <li class="elementoBarra">Login</li>
-                </a>
+                    </a>
+                    <p class="barrasiete" style="margin: 0;"> / </p>
+                    <a href="registro.html">
+                        <li class="elementoBarra">Sign up</li>
+                    </a>
+                    </li>
+                </div>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="formulario">            
-            <h2 class="encabezado">Crear nueva cuenta</h2>
-          
+    <main class="mainRegistro">
+        <div></div>
+        <div cla ss="formulario">
             <form class="contenedor">
-              <p><input class="input" type="text" placeholder="Nombre"></p>
-              <p><input class="input" type="password" placeholder="Apellidos"></p>
-              <p><input class="input" type="text" placeholder="Nombre de usuario"></p>
-              <p><input class="input" type="email" placeholder="Correo electronico"></p>
-              <p><input class="input" type="password" placeholder="Contraseña"></p>
-              <p><input class="input" type="password" placeholder="Confirmar contraseña"></p>
-              <p id="condiciones"><input id="check" type="checkbox">Aceptar las condiciones</p>
-              <p><input id="boton" type="submit" value="Registrarse"></p>
+                <div class="inputSpan">
+                    <input name='nombre' class="input" type="text" placeholder="Nombre" onkeydown="letras('nombre',0)"
+                        required>
+                    <span></span>
+                </div>
+
+                <div class="inputSpan">
+                    <input name="apellidos" class="input" type="text" placeholder="Apellidos"
+                        onkeydown="letras('apellidos',1)">
+                    <span></span>
+                </div>
+
+                <div class="inputSpan">
+                    <input class="input" type="text" placeholder="Nombre de usuario" required>
+                    <span></span>
+                </div>
+
+                <div class="inputSpan">
+                    <input name="email" class="input" type="email" placeholder="Correo electronico" required
+                        onkeydown="email('email')">
+                    <span></span>
+                </div>
+
+                <div class="inputSpan">
+                    <input name="password" class="input" type="password" placeholder="Contraseña" required onkeydown="password('password')">
+                    <span></span>
+                </div>
+                <div class="inputSpan">
+                    <input class="input" type="password" placeholder="Confirmar contraseña" required>
+                    <span></span>
+
+                </div>
+                <div class="checkbox">
+                    <input style="display: flex;" id="check" type="checkbox" required>Aceptar las condiciones
+
+                </div>
+                <input id="boton" type="submit" value="Registrarse">
             </form>
         </div>
     </main>
     <script src="app.js"></script>
 </body>
+
 </html>

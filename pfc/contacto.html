@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arroces</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="stylesMobile.css">
     <link rel="stylesheet" href="fontawesome/fontawesome/css/all.css">
 </head>
-<body>
+
+<body class="bodyContacto">
     <header>
         <button class="abrir" onclick="abrirHamburguesa()"><i class="bi bi-list"></i></i></button>
         <nav class="barraNav">
             <ul class="abierto">
                 <button class="cerrar" onclick="cerrarHamburguesa()"><i class="bi bi-x-lg"></i></button>
-                <a href="index.html">
-                    <li class="elementoBarra">Inicio</li>
-                </a>
-                <a href="tienda.html">
-                    <li class="elementoBarra">Tienda</li>
-                </a>
-                <a href="#restaurantes">
-                    <li class="elementoBarra">Restaurantes</li>
-                </a>
-                <a href="contacto.html">
+                <div>
+                    <a href="index.html">
+                        <li class="elementoBarra">Inicio</li>
+                    </a>
+                </div>
+                <div>
+                    <a href="tienda.html">
+                        <li class="elementoBarra">Tienda</li>
+                    </a>
+                </div>
+                <div>
+                    <a href="#restaurantes">
+                        <li class="elementoBarra">Restaurantes</li>
+                    </a>
+                </div>
+                <div class="login">
+                    <li>
+                        <a href="contacto.html">
                     <li class="elementoBarra">Login</li>
-                </a>
+                    </a>
+                    <p class="barrasiete" style="margin: 0;"> / </p>
+                    <a href="registro.html">
+                        <li class="elementoBarra">Sign up</li>
+                    </a>
+                    </li>
+                </div>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="formulario">            
+    <main class="mainContacto">
+        <div class="formulario">
             <form class="contenedor">
-              <p><input class="input" type="email" placeholder="Correo electronico"></p>
-              <p><input class="input" type="password" placeholder="Contraseña"></p>
-              <p><input id="boton" type="submit" value="Iniciar sesion"></p>
+                <div class="inputSpan">
+                <p><input name="email" class="input" type="email" placeholder="Correo electronico" onkeydown="letras('email',0)"></p>
+                <span></span>
+                </div>
+                <div class="inputSpan">
+                <p><input class="input" type="password" placeholder="Contraseña"></p>
+                <span></span>
+                </div>
+                <div class="inputSpan">
+                <p><input id="boton" type="submit" value="Iniciar sesion"></p>
+                <span></span>
+                </div>
             </form>
         </div>
     </main>
     <script src="app.js"></script>
 </body>
+
 </html>

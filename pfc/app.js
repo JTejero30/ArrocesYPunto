@@ -100,6 +100,7 @@ function cerrarHamburguesa() {
     imheader.classList.remove('opacidad');
 }
 
+
 /**********Funcion que detecta la posicion del scroll y cambia el background del nav******/
 let barrasiete
 barrasiete = document.getElementsByClassName('barrasiete')[0];

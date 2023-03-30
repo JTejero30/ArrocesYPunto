@@ -5,3 +5,4 @@ restaurantes en sign up sale azul
 RESPONSIVE problema signup en movil
 RESPONSIVE login/sign up no se ve Hamburguesa
 RESPONSIVE SECCIONES
+arreglar logo en logins

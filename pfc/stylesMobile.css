@@ -69,6 +69,7 @@
     }
     .barraNav.visible{
         visibility: visible;
+        z-index: 3;
     }
 
 
@@ -87,5 +88,9 @@
 
     /*******************LOGIN/SIGNUP********************/
 
+    .bodyRegistro{
+        z-index: -1;
+        position: absolute;
+    }
     
 }

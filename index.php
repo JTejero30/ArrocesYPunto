@@ -1,4 +1,11 @@
 <!--Grupo 3-->
+
+<?php
+require_once('Database.php');
+
+$bd=Database::conectarBD('mysql', 'ArrocesYPunto', 'localhost', '3306', 'root', '');
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -23,12 +30,12 @@
             <ul class="abierto">
                 <button class="cerrar" onclick="cerrarHamburguesa()"><i class="bi bi-x-lg"></i></button>
                 <div>
-                    <a href="index.html">
+                    <a href="index.php">
                         <li class="elementoBarra">Inicio</li>
                     </a>
                 </div>
                 <div>
-                    <a href="tienda.html">
+                    <a href="tienda.php">
                         <li class="elementoBarra">Tienda</li>
                     </a>
                 </div>
@@ -39,11 +46,11 @@
                 </div>
                 <div class="login">
                     <li>
-                        <a href="contacto.html">
+                        <a href="contacto.php">
                     <li class="elementoBarra">Login</li>
                     </a>
                     <p class="barrasiete" style="margin: 0;"> / </p>
-                    <a href="registro.html">
+                    <a href="registro.php">
                         <li class="elementoBarra">Sign up</li>
                     </a>
                     </li>
@@ -99,22 +106,15 @@
             <img class="img3" src="img/Frfe8mgWwAEJy5F.jpg" alt="">
         </section>
         <section id="recetas" class="recetas">
-            <div class="cardReceta">
+            <!-- <div class="cardReceta">
                 <section class=""></section>
                 <img src="img/Arroz_01.jpg" alt="">
                 <h2><em>Arroz de Salmonete</em></h2>
                 <p></p>
-            </div>
-            <div class="cardReceta">
-                <img src="img/Arroz de costilla y mejillon_01.jpg" alt="">
-                <h2><em>Arroz de costilla en llanda</em></h2>
-                <p></p>
-            </div>
-            <div class="cardReceta">
-                <img src="img/Arroz negro_01.jpg" alt="">
-                <h2><em>Arroz negro de carabinero</em></h2>
-                <p></p>
-            </div>
+            </div> -->
+            <?php
+            Database::cardsRecetas($bd, 'SELECT * FROM cardsreceta limit 3');
+            ?>
         </section>
         <section class="cursos">
             <div class="cursosdetalle1">

@@ -13,6 +13,13 @@ let iconoX = document.createElement('i')
 iconoX.setAttribute('class', 'fas fa-times')
 iconoX.setAttribute('style', 'color: #f51414;')
 
+let cardsProducto= document.getElementsByClassName('card');
+let descripcionProducto= document.getElementsByClassName('descripcionProducto')
+
+// for (let i = 0; i < cardsProducto.length; i++) {
+//     cardsProducto[i].addEventListener('click',mostrarDescripcion(i))
+// }
+
 
 /*correo:
 1ª: no puede haber @ ni espacios
@@ -109,7 +116,7 @@ function sticky() {
 
     let ejeY = window.scrollY;
 
-    if (ejeY > 610) {
+    if (ejeY > 550) {
         barraNav.classList.add('sticky');
         barraNav.classList.add('a:visited');
 

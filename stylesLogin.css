@@ -1,0 +1,300 @@
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*CONTACTO*/
+.logoHeader {
+    display: none;
+}
+
+form {
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputSpan {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    max-width: 240px;
+
+}
+
+input {
+    width: 200px;
+    transition: 0.5s;
+}
+
+input:focus {
+    width: 250px;
+}
+
+.inputSpan label.text {
+    font-size: 0.75rem;
+    color: #818CF8;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background: #e8e8e8;
+    width: fit-content;
+}
+
+.inputSpan input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px #818CF8 solid;
+    border-radius: 5px;
+    background: #e8e8e8;
+
+}
+
+.valido {
+    border: 3px #4feb44 solid !important;
+}
+
+.invalido {
+    border: 2px #ef3232 solid !important;
+}
+
+
+label {
+    display: flex;
+    justify-content: center;
+}
+
+.condiciones {
+    margin-left: -10%;
+}
+
+.bodyContacto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+
+}
+
+.mainRegistro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    top: -320px;
+
+
+
+}
+
+.mainContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: -150px;
+}
+
+.formulario {
+    width: 400px;
+    font-size: 13px;
+    position: absolute;
+    z-index: 2;
+}
+
+.contenedor {
+    z-index: 1;
+    display: flex;
+    background: #e8e8e8;
+
+    width: 100%;
+    border-radius: 3%;
+
+    position: absolute;
+    top: -200;
+    height: 489px;
+}
+.logCont {
+    max-height: 262px;
+    margin-top: 142px;
+}
+
+.formulario div {
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#boton {
+
+    background-color: #818CF8;
+    border-color: transparent;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    border-radius: 0%0%5%5%;
+}
+
+.containercheck {
+    cursor: pointer;
+    display: flex;
+    gap: 4%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+.containercheck input {
+    display: none;
+
+}
+
+.containercheck svg {
+    overflow: visible;
+}
+
+.path {
+    fill: none;
+    stroke: #818CF8;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+    stroke-dasharray: 241 9999999;
+    stroke-dashoffset: 0;
+}
+
+.containercheck input:checked~svg .path {
+    stroke-dasharray: 70.5096664428711 9999999;
+    stroke-dashoffset: -262.2723388671875;
+}
+
+
+
+#condiciones {
+    margin-left: 15px;
+}
+
+.login {
+    display: flex;
+}
+
+.formulario button:hover {
+    cursor: pointer;
+}
+
+.imagenFondo {
+    background-repeat: no-repeat;
+
+    z-index: -1;
+
+
+    filter: brightness(60%)
+}
+
+.logoHeader {
+    width: 50%;
+
+
+
+    top: 35%;
+    left: 24%;
+
+    filter: brightness(95%)
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #818CF8;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #818CF8;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #fff;
+}

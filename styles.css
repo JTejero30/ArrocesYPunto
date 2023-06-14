@@ -1,9 +1,10 @@
 /*INDEX*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 * {
-    font-family: 'Poppins', sans-serif;
     text-decoration: none;
 
     scroll-behavior: smooth;
@@ -14,6 +15,9 @@ header {
 }
 
 body {
+
+    font-family: 'Poppins', sans-serif;
+
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -46,8 +50,26 @@ nav {
     position: absolute;
 }
 
-a:visited {
+nav a:visited {
     color: rgb(226, 226, 226);
+}
+
+.bi-box-arrow-right {
+
+    margin-left: 10px;
+
+}
+
+.bi-person {
+
+    margin-right: 10px;
+
+}
+
+.bi-table {
+
+    margin-right: 10px;
+
 }
 
 .sticky a:visited {
@@ -156,9 +178,9 @@ a:visited {
 
 }
 
-/* .elementoBarra:hover > :not(:hover){
-    opacity: 0.5;
-  } */
+.login {
+    display: flex;
+}
 
 /*MAIN*/
 
@@ -175,18 +197,23 @@ a:visited {
     background-color: #bfaa4e91;
 }
 
+#historia p {
+    font-size: 3rem;
+    font-family: 'Taviraj', serif;
+    color: #0a080391;
+    line-height: 50px;
+}
+
 .texto1 {
     grid-column: 3/16;
     grid-row: 3/16;
-    margin: 0;
-
-
 }
 
 .img1 {
     grid-row: 3/10;
     grid-column: 20/31;
     width: 100%;
+    margin-top: 54px;
 }
 
 .img3 {
@@ -197,9 +224,9 @@ a:visited {
 }
 
 .img2 {
-    grid-column: 20/28;
-    grid-row: 20/31;
-    width: 110%;
+    grid-column: 20/31;
+    grid-row: 20/25;
+    width: 84%;
 }
 
 .texto2 {
@@ -238,6 +265,14 @@ a:visited {
     border-radius: 5px;
 }
 
+.nombreReceta {
+    color: #0a0803;
+}
+
+.descripcionReceta {
+    display: none;
+}
+
 /*RESTAURANTES*/
 [class="restaurantes"] {
     margin-top: 5%;
@@ -266,7 +301,7 @@ a:visited {
     height: 262px;
 }
 
-/*CURSOS*/
+/*cursos*/
 
 .cursos {
     height: auto;
@@ -304,272 +339,6 @@ a:visited {
 
 }
 
-/*TIENDA*/
-
-/*header*/
-
-.imagentienda {
-    height: 500px;
-
-    background-image: url("../ArrocesYPunto/img/headertienda.jpeg");
-
-    background-attachment: fixed;
-    background-position: left bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
-    filter: brightness(55%)
-}
-
-.txtTienda {
-    position: absolute;
-    z-index: 1;
-    top: 89px;
-    left: 560px;
-    font-size: 115px;
-
-    color: rgb(226, 226, 226);
-}
-
-/*MAIN TIENDA*/
-.buscador{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-}
-.rangoPrecio{
-    display: flex;
-}
-.rangoPrecio span{
-    margin: 7px;
-    font-size: smaller;
-}
-
-.mainTienda {
-    margin-top: 3rem;
-}
-
-button:hover{
-    cursor: pointer;
-}
-
-.cardsProducto {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin: 5%;
-}
-.nombrePrecio{
-    display:block;
-    justify-content: flex-end;
-    align-items: center;
-    
-}
-.categoria{
-    visibility: hidden;
-}
-
-.cardsProducto .card {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    height: auto;
-    transition: 0.5s;
-    word-wrap: break-word;
-    padding: 1%;
-
-    
-    border-radius: 0px;
-    background: #ffffff;
-    box-shadow:  5px 5px 10px #d3d3d3,
-    -5px -5px 10px #ededed;
-
-}
-
-.cardsProducto .card:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.cardsProducto img {
-    width: 90%;
-    align-self: center;
-}
-
-.descripcionProducto {
-    display: none;
-}
-
-.card .descripcionProducto2 {
-    display: block;
-}
-
-.card p {
-    margin: 0px;
-}
-
-/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/*CONTACTO*/
-
-form {
-    margin-top: 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.inputSpan {
-    display: flex;
-
-}
-
-.label {
-    display: flex;
-    gap: 10px;
-}
-
-span {
-    font-size: 30px;
-
-    margin-left: 10%;
-
-
-}
-
-label {
-    display: flex;
-    justify-content: center;
-}
-
-.condiciones {
-    margin-left: -10%;
-}
-
-.bodyContacto {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    overflow: hidden;
-
-}
-
-.mainRegistro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 700px;
-    position: absolute;
-    top: -320px;
-
-
-
-}
-
-.mainContacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 500px;
-    position: absolute;
-    top: -150px;
-}
-
-.formulario {
-    width: 400px;
-    font-size: 13px;
-    position: absolute;
-    z-index: 2;
-}
-
-.contenedor {
-    z-index: 1;
-    display: flex;
-    background: #ebebeb91;
-    width: 100%;
-    border-radius: 3%;
-
-    position: absolute;
-    top: -200;
-}
-
-.formulario div {
-    padding: 15px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.formulario input {
-    width: 100%;
-    height: 4px;
-    border-width: 1px;
-    padding: 10px;
-    font-size: 15px;
-    background: #ffffff;
-    border-color: #5d5d5d;
-    color: #555;
-    border-radius: 5%;
-}
-
-#boton {
-
-    background-color: #252F5A;
-    border-color: transparent;
-    color: #fff;
-    width: 100%;
-    height: 50px;
-}
-
-.checkbox {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    font-size: 18px;
-    width: 100%;
-}
-
-#check {
-    height: 20px;
-}
-
-#condiciones {
-    margin-left: 15px;
-}
-
-.login {
-    display: flex;
-}
-
-.formulario button:hover {
-    cursor: pointer;
-}
-
-.imagenFondo {
-    background-repeat: no-repeat;
-
-    z-index: -1;
-
-
-    filter: brightness(60%)
-}
-
-.logoHeader {
-    width: 50%;
-
-
-
-    top: 35%;
-    left: 24%;
-
-    filter: brightness(95%)
-}
-
-/**+++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
 footer {
     display: flex;
 
@@ -586,4 +355,184 @@ footer {
     width: 20%;
     justify-content: space-between;
     font-size: 3rem;
+}
+
+@media screen and (max-width: 650px) {
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+
+    .logoHeaderMobile {
+        visibility: visible;
+        width: 35%;
+        top: 3%;
+        left: 2%;
+    }
+
+    .opacidad {
+        /*aplicada al fondo cuando se abre*/
+        filter: brightness(60%);
+    }
+
+    .barraNav {
+        visibility: hidden;
+
+        position: absolute;
+        top: 0px;
+
+
+        bottom: 0;
+        padding-top: 15%;
+        padding-bottom: 5%;
+        margin-top: 0;
+
+
+        bottom: 0px;
+        /*para que llegue hasta abajo*/
+    }
+
+    .barraNav ul {
+        margin-top: 80px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+
+    .barraNav li {
+        transition: 0s;
+        font-size: 90%;
+        padding: 5%;
+        /*hay un padding a investigar en RESTAURANTEs*/
+    }
+
+    .login .elementoBarra {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .flecha {
+        display: none;
+    }
+
+    /*******************/
+    .cerrar,
+    .abrir {
+        display: block;
+        position: absolute;
+
+        background-color: transparent;
+        color: rgb(229, 229, 229);
+
+        border: none;
+        cursor: pointer;
+    }
+
+    .abrir {
+        font-size: 270%;
+        top: 2%;
+        left: 86%;
+    }
+
+    .cerrar {
+        font-size: 150%;
+        top: 2%;
+        left: 86%;
+    }
+
+    .abrir.esconder {
+        visibility: hidden;
+    }
+
+    .barraNav.visible {
+        visibility: visible;
+        z-index: 3;
+    }
+
+    #historia {
+        width: 100%;
+        height: 1000x;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        font-size: 10px;
+        background-color: #bfaa4e91;
+    }
+
+    #historia p {
+        margin: 10px;
+        margin-left: 20px;
+        font-size: 32px;
+        font-family: 'Taviraj', serif;
+        color: #0a080391;
+    }
+
+    .texto1 {
+        margin: 10px;
+        font-size: 32px;
+        font-family: 'Taviraj', serif;
+        color: #0a080391;    }
+
+    .img1 {
+        width: 70%;
+        margin: 24px;
+    }
+
+    .img3 {
+        width: 70%;
+        margin: 24px;
+    }
+
+    .img2 {
+        width: 70%;
+        margin: 24px;
+    }
+
+    .texto2 {
+        margin: 10px;
+        font-size: 32px;
+        font-family: 'Taviraj', serif;
+        color: #0a080391;
+    }
+    
+    /*RECETAS*/
+    .recetas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+        margin-bottom: 20px;
+    }
+    /*cursos*/
+    .cursos p {
+        display: none;
+    }
+    /*RESTAURANTES*/
+    .restaurantes {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 20px;
+        width: 100%;
+    }
+    .redes {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        justify-content: space-between;
+        font-size: 3rem;
+    }
 }

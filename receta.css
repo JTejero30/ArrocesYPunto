@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+* {
+    font-family: 'Taviraj', serif;
+    text-decoration: none;
+    
+}
+html{
+    background-color: whitesmoke;
+}
+.receta{
+    display: flex;
+    flex-direction: row-reverse;
+
+    background-color: #bfaa4e91;
+
+    margin: 1%10%1%10%;
+    padding: 1%;
+}
+.recetaTexto{
+    margin-right: 290px;
+    position: absolute;
+    top: 9%;
+    left: 14%;
+    flex-wrap: wrap;
+}
+.nombreReceta{
+    font-size: 45px;
+    margin-top: 0px;
+}
+.ingredientes{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    line-height: 20px;
+}
+img{
+    width: 400px;
+}
+#pasos{
+    min-height: 149px;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 466px;
+    justify-content: center;
+    align-items: center;
+    line-height: 36px;
+}
+button{
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.izq:hover{
+    transform: translateX(-7px);
+}
+.der:hover{
+    transform: translateX(7px);
+}
+.flechas{
+    display: flex;
+    gap: 400px;
+}

@@ -4,7 +4,8 @@
 
 let nombre
 let formulario = document.forms
-let span = document.getElementsByTagName('span')
+let input = document.getElementsByClassName('input');
+console.log(input);
 let icono = document.createElement('i')
 icono.setAttribute('class', 'fas fa-check');
 icono.setAttribute('style', 'color: #0eb911;')
@@ -13,69 +14,47 @@ let iconoX = document.createElement('i')
 iconoX.setAttribute('class', 'fas fa-times')
 iconoX.setAttribute('style', 'color: #f51414;')
 
-let cardsProducto= document.getElementsByClassName('card');
-let descripcionProducto= document.getElementsByClassName('descripcionProducto')
+let cardsProducto = document.getElementsByClassName('card');
+let descripcionProducto = document.getElementsByClassName('descripcionProducto')
 
-// for (let i = 0; i < cardsProducto.length; i++) {
-//     cardsProducto[i].addEventListener('click',mostrarDescripcion(i))
-// }
+// let pass1 = formulario[0]['passw1']['value']
+// let pass2 = formulario[0]['confirmar']['value']
 
-
-/*correo:
-1ª: no puede haber @ ni espacios
-@
-2ª: no espacios 
-.
-3ª: no numeros 
-
-passwd
-+una mayuscula
-+una minuscula
-+dos digitos seguidos
-+un signo de los siguientes [-_.+@]
-
-passwd repeticion que coincida con el anterior password
-nombre y apellidos sin numeros ni caracteres especiales
-*/
-/*
-Funcion que recibe por parametro el name del input y el numero del span a modificar y la validacion Regex
-*/
+let pass1 = document.getElementById('pass1');
+let pass2 = document.getElementById('pass2');
 
 
 function validar(name, num, validacion) {
 
-    let valor = formulario[0][name]['value'] 
-    if (validacion.test(valor)) {
-        console.log('Bien');
+    let valor = formulario[0][name]['value']
 
-        span[num].appendChild(icono)
-        if (span[num].hasChildNodes) {
-            span[num].removeChild(iconoX)
-        }
-    } else {
-        span[num].appendChild(iconoX)
-        if (span[num].hasChildNodes) {
-            span[num].removeChild(icono)
-        }
+    if (input[num].classList.contains("valido")) {
+        input[num].classList.remove("valido")
+    } else if (input[num].classList.contains("invalido")) {
+        input[num].classList.remove("invalido")
     }
-}
-function contraseñaCoincide() {
-
-    let passw1=formulario[0]['passw1']['value']
-    let passw2=formulario[0]['passw2']['value']
-
-    console.log(passw1);
-    console.log(passw2);
-    if (passw1===passw2) {
-        span[5].appendChild(icono)
-        if (span[5].hasChildNodes) {
-            span[5].removeChild(iconoX)
-        }
+    if (validacion.test(valor)) {
+        input[num].classList.add("valido");
     } else {
-        span[5].appendChild(iconoX)
-        if (span[5].hasChildNodes) {
-            span[5].removeChild(icono)
-        }
+        input[num].classList.add("invalido");
+    }
+
+}
+
+function contraseñaCoincide(pass1v,pass2,name,num) {
+
+    pass1v=pass1.value;
+    console.log(pass1.value);
+console.log(pass2);
+    if (input[num].classList.contains("valido")) {
+        input[num].classList.remove("valido")
+    } else if (input[num].classList.contains("invalido")) {
+        input[num].classList.remove("invalido")
+    }
+    if (pass1v === pass2) {
+        input[num].classList.add("valido");
+    } else {
+        input[num].classList.add("invalido");
     }
 }
 
@@ -124,4 +103,6 @@ function sticky() {
         barraNav.classList.remove('sticky');
     }
 }
+
+
 
